@@ -6,7 +6,7 @@
 
 def pascal_triangle(n):
     """ generate a pascal triangle base on the n
-    
+
         - n: the height or number of row in the computed pascal triangle
 
     """
@@ -28,5 +28,5 @@ def pascal_triangle(n):
             j += 1
         pascal_tri.append(row)
         prev_row = row
-    
+
     return pascal_tri
