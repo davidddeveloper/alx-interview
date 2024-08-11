@@ -4,6 +4,7 @@
 
 """
 
+
 def pascal_triangle(n):
     """ generate a pascal triangle base on the n
 
