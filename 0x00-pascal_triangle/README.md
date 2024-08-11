@@ -23,3 +23,5 @@ print(row)
 prevrow = row
 	
 ```
+
+[python solution](0-pascal_triangle.py)
