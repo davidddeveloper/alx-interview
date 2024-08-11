@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+    0-pascal_triangle: Represents a pascal triangle
+
+"""
+
 def pascal_triangle(n):
     """ generate a pascal triangle base on the n
     
