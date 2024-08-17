@@ -19,4 +19,9 @@ pseudocode of lockboxes - with loops
 >    >    >    add idx of innerloop (key) to viewboxes
                 
 >    if length of viewedboxes equals boxes return true
->    otherwise return false'''
+
+>    otherwise return false
+
+
+## Python solution
+[iterative solution](0-lockboxes.py)
