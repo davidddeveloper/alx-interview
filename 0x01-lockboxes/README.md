@@ -25,3 +25,12 @@ pseudocode of lockboxes - with loops
 
 ## Python solution
 [iterative solution](0-lockboxes.py)
+
+## Resources
+[Python Lists (Python Official Documentation)](https://docs.python.org/3/tutorial/datastructures.html)
+[Graph Theory (Khan Academy)](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
+[asymptotic-notation-and-analysis-based-on-input-size-of-algorithms](https://www.geeksforgeeks.org/asymptotic-notation-and-analysis-based-on-input-size-of-algorithms/)
+[Python Recursion](https://realpython.com/python-recursion)
+[Queue and Stack in python](https://www.geeksforgeeks.org/queue-in-python)
+[Python set](https://docs.python.org/3/tutorial/datastructures.html#sets)
+
