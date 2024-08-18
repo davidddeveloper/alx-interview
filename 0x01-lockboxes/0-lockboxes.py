@@ -11,9 +11,8 @@ def canUnlockAll(boxes):
     """
     viewedboxes = {0}  # keys of boxes
     for idx, val in enumerate(boxes):
-        if idx not in viewedboxes and idx > 0:
-            for key in val:
-                viewedboxes.add(key)
+        for key in val:
+            viewedboxes.add(key)
 
     if len(viewedboxes) == len(boxes):
         return True
