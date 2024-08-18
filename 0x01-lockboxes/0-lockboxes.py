@@ -9,6 +9,7 @@ def canUnlockAll(boxes):
 
         False otherwise
     """
+
     viewedboxes = {0}  # keys of boxes
     for idx, val in enumerate(boxes):
         for key in val:
@@ -16,4 +17,5 @@ def canUnlockAll(boxes):
 
     if len(viewedboxes) == len(boxes):
         return True
+
     return False
