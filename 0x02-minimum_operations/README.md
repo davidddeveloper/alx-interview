@@ -59,4 +59,7 @@ is a concept in math and computer science to solve complex problems by breaking 
 >   loop ntimes:
 >     if factor minOperations with factor
 >       stop the loop
->   
+>
+>   loop ntimes:
+>     read/copy if loop is at index 0
+>     write/paste if loop is above index 0
