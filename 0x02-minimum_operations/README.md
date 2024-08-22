@@ -45,9 +45,10 @@ is a concept in math and computer science to solve complex problems by breaking 
 >   - last factor 5 means `perform 5 operations - first is copy AND rest is paste`
 >   -   - read/copy from the file -> H
 >       - write/paste to the file four times -> HHHHH
->   - middle factor 5 means `perfom 5 operations - first is copy AND rest is paste`
+>   - middle factor 5 means `perform 5 operations - first is copy AND rest is paste`
 >   -   - read/copy from the file -> HHHHH
 >       - write/paste to the file four times -> HHHHHHHHHHHHHHHHHHHHHHHHH
 >   - first factor 3 means `perform 3 operations - first is copy AND rest is paste`
->   -   - read/copy 
->   - past 
+>   -   - read/copy  from the file -> HHHHHHHHHHHHHHHHHHHHHHHHH
+>       - write/paste to the file 2 times -> HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+>   - lastly to prove that this solution works and it works efficiently go ahead and count the letters H, it should be equivalent to 75 characters
