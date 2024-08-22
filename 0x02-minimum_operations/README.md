@@ -65,3 +65,5 @@ is a concept in math and computer science to solve complex problems by breaking 
     >   loop ntimes:
     >     read/copy if loop is at index 0
     >     write/paste if loop is above index 0
+
+> `python solution` [here](0-minoperations.py)
