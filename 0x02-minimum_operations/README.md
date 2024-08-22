@@ -17,7 +17,8 @@ is a concept in math and computer science to solve complex problems by breaking 
 > recursion in python is when a function calls itself. Think of it as another way of creating loops.
 > The best way I understand recursion is when I think of them as stack (multiple books ontop of each other).
 > imagine a function that takes a positive integer argument n and calls itself, each times it decrement n and print it out until n is zero (`break point`)
-> now imagine calling that function and passing 4 as the argument for n. What would you think will happen? Alright lemme explain to you the stacking I mention earlier.
+> now imagine calling that function and passing 4 as the argument for n. What do you think will happen? This is what the stacking would look like and I thing it is self explanatory - the function that call itself will have to wait for itself `the clone` to finish before continuing itself. - `synchronous` So it keeps stacking until the break point is reached. When the break point is reached the function rolls back executing other part of the code after the call to itself.
+> 
 > 
 
 ### `prime factorization`
