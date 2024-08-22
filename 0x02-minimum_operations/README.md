@@ -54,12 +54,14 @@ is a concept in math and computer science to solve complex problems by breaking 
 >   - lastly to prove that this solution is correct and it works efficiently go ahead and count the letters H, it should be equivalent to 75 characters
 
 > ### pseudocode
-> minOperations(n):
->   if n == 1 break
->   loop ntimes:
->     if factor minOperations with factor
->       stop the loop
->
->   loop ntimes:
->     read/copy if loop is at index 0
->     write/paste if loop is above index 0
+> ![pseudocode](https://github.com/user-attachments/assets/fa7525f6-7607-4ca1-b59b-48de944c1731)
+
+    > minOperations(n):
+    >   if n == 1 break
+    >   loop ntimes:
+    >     if factor minOperations with factor
+    >       stop the loop
+    >
+    >   loop ntimes:
+    >     read/copy if loop is at index 0
+    >     write/paste if loop is above index 0
