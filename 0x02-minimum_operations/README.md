@@ -42,6 +42,12 @@ is a concept in math and computer science to solve complex problems by breaking 
 >   - `step 1 ` factores of 75 is 3 * 5 * 5
 >   - `note ` adding 3, 5 and 5 will give us 13 operations we can perform on 75 to get n Hs
 >   - ` step 2` is to recursively perform the operations - meaning
->   - last factor 5 means `perfomr 5 operations`
+>   - last factor 5 means `perform 5 operations - first is copy AND rest is paste`
 >   -   - read/copy from the file -> H
+>       - write/paste to the file four times -> HHHHH
+>   - middle factor 5 means `perfom 5 operations - first is copy AND rest is paste`
+>   -   - read/copy from the file -> HHHHH
+>       - write/paste to the file four times -> HHHHHHHHHHHHHHHHHHHHHHHHH
+>   - first factor 3 means `perform 3 operations - first is copy AND rest is paste`
+>   -   - read/copy 
 >   - past 
