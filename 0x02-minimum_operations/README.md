@@ -31,3 +31,17 @@ is a concept in math and computer science to solve complex problems by breaking 
 >
 >`prime factorization` is a way of writing a number as the product of it prime factors (the prime factors of 10 is 2 and 5; ie prime factorization of 10 is (10 == 2 * 5))
 
+## Solution
+> The solution to this problem is very simple if you understanding the three concepts above plus your general coding skills.
+> 
+> `step 1` the first step is finding the prime factorization of n which by adding them will give us the minimum number of operations we can perform to make n Hs
+> 
+> `step 2` once we have the factors of n and we know the number of operation, the next thing is to recursively perform the operations (read/write) base on the factors. - `tabulation appraoch`
+>
+> example: take 75
+>   - `step 1 ` factores of 75 is 3 * 5 * 5
+>   - `note ` adding 3, 5 and 5 will give us 13 operations we can perform on 75 to get n Hs
+>   - ` step 2` is to recursively perform the operations - meaning
+>   - last factor 5 means `perfomr 5 operations`
+>   -   - read/copy from the file -> H
+>   - past 
