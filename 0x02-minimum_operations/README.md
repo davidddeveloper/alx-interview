@@ -16,10 +16,15 @@ is a concept in math and computer science to solve complex problems by breaking 
 ### Recursion
 > recursion in python is when a function calls itself. Think of it as another way of creating loops.
 > The best way I understand recursion is when I think of them as stack (multiple books ontop of each other).
+> 
 > imagine a function that takes a positive integer argument n and calls itself, each times it decrement n and print it out until n is zero (`break point`)
-> now imagine calling that function and passing 4 as the argument for n. What do you think will happen? This is what the stacking would look like and I thing it is self explanatory - the function that call itself will have to wait for itself `the clone` to finish before continuing itself. - `synchronous` So it keeps stacking until the break point is reached. When the break point is reached the function rolls back executing other part of the code after the call to itself.
 > 
+> now imagine calling that function and passing 4 as the argument for n. What do you think will happen?
+> This is what the stacking would look like and I thing the image is self explanatory - the function that call itself will have to wait for itself `the clone` to finish before continuing itself. - `synchronous` So it keeps stacking until the break point is reached. When the break point is reached the function rolls back executing other part of the code after the call to itself.
 > 
+> ![code_stacking](https://github.com/user-attachments/assets/d7df4850-82dd-43c5-b355-10760b9cb29e)
+
+
 
 ### `prime factorization`
 >`prime number` is any number that is divisible by only 1 and it self.
