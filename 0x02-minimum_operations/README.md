@@ -52,3 +52,11 @@ is a concept in math and computer science to solve complex problems by breaking 
 >   -   - read/copy  from the file -> HHHHHHHHHHHHHHHHHHHHHHHHH
 >       - write/paste to the file 2 times -> HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 >   - lastly to prove that this solution is correct and it works efficiently go ahead and count the letters H, it should be equivalent to 75 characters
+
+> ### pseudocode
+> minOperations(n):
+>   if n == 1 break
+>   loop ntimes:
+>     if factor minOperations with factor
+>       stop the loop
+>   
