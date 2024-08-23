@@ -1,7 +1,7 @@
 # Minimum Operations
 > `question` In a text file, there is a single character H. Your text editor can execute only two operations in this file: Copy All and Paste. Given a number n, write a method that calculates the fewest number of operations needed to result in exactly n H characters in the file.
 >
-> `my understand` - you are only allowed to perform read/write operation on the file, the file will contain a single character H, the end goal is to end up with n Hs (n number of Hs)
+> `my understand` - you are only allowed to perform read/write operation on the file, the file will contain a single character H, the end goal is to end up with n Hs (n number of Hs). Eventhough this is what the question means, it is not necessary to perform read/write operation or even work with fille(s) in your solution. It is just an assumption to say `In a text file, there is a single character H.` However, in the psuedocode below, I have include the read/write operation so you can really understand what's going on in the solution. But note also that including the read/write operation in the solution can be ineffective especially with larger values of n - `your cpu will get fried`. Regardless I have included it in the pseudocode - so it is your choice to make, wheather to include in your final solution or not.
 >
 
 ## concepts that helped me to solve the question
@@ -54,7 +54,8 @@ is a method in math and computer science to solve complex problems by breaking i
 >   - lastly to prove that this solution is correct and it works efficiently go ahead and count the letters H, it should be equivalent to 75 characters
 
 > ### pseudocode
-![code_minoperation](https://github.com/user-attachments/assets/55e8d0a4-8b09-4232-956f-5cbd67b13e2c)
+> Recursive approach
+> ![code_minoperation](https://github.com/user-attachments/assets/55e8d0a4-8b09-4232-956f-5cbd67b13e2c)
 
     > minOperations function with argument n:
     >    if n == 1:
@@ -72,4 +73,11 @@ is a method in math and computer science to solve complex problems by breaking i
     >    
     >    return no_of_operation
 
+> Iterative approach
+![minoperations_iterative_approach](https://github.com/user-attachments/assets/7ef705b7-ffa5-479c-a29f-fab7690bbdb5)
+
 > `python solution` [here](0-minoperations.py)
+> `python iterative solution` [here](iterative_approach.py)
+> `python recursive approach` [here](recursive_approach.py)
+>  `python iterative with file-IO solution` [here](iterative_method_with_file_io.py)
+>  `python recursive with file-IO solution` [here](recursive_method_with_file_io.py)
