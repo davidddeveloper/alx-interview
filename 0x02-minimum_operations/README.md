@@ -77,7 +77,12 @@ is a method in math and computer science to solve complex problems by breaking i
 ![minoperations_iterative_approach](https://github.com/user-attachments/assets/7ef705b7-ffa5-479c-a29f-fab7690bbdb5)
 
 > `python solution` [here](0-minoperations.py)
+> 
 > `python iterative solution` [here](iterative_approach.py)
+> 
 > `python recursive approach` [here](recursive_approach.py)
+> 
 >  `python iterative with file-IO solution` [here](iterative_method_with_file_io.py)
+> 
 >  `python recursive with file-IO solution` [here](recursive_method_with_file_io.py)
+> 
