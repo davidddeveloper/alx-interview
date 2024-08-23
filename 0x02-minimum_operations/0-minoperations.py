@@ -12,9 +12,6 @@
 def minOperations(n):
     no_of_operation = 0
     if n == 1:
-        # initially create the file
-        with open('xyz', 'w') as f:
-            f.write('H')  # paste
         return no_of_operation
 
     # dynamic programming - tabulation
@@ -22,17 +19,6 @@ def minOperations(n):
         if n % i == 0:
             no_of_operation += minOperations(n // i)
             no_of_operation += i
-
-            # perform the read and write operation
-            copied = 'character'
-            for i in range(i):
-                if i == 0:
-                    with open('xyz', 'r') as f:
-                        copied = f.read()
-
-                else:
-                    with open('xyz', 'a') as f:
-                        f.write(copied)
 
             break
 
