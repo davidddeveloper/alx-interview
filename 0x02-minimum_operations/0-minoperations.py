@@ -13,28 +13,12 @@ def minOperations(n):
     if n == 1:
         return operation_count
 
-    # initially create the file
-    # with open('xyz', 'w') as f:
-    #    f.write('H')  # paste
-
     counter = 2
     while (counter <= n):
         while n % counter == 0:  # counter is a factor of n
-            print(counter, n)
             operation_count += counter
 
-            # perform the read and write operation
-            # copied = 'character'
-            # for i in range(counter):
-            #    if i == 0:
-            #        with open('xyz', 'r') as f:
-            #            copied = f.read()
-
-            #    else:
-            #        with open('xyz', 'a') as f:
-            #            f.write(copied)
-
             n = n // counter
-        counter += 1  # reset counter
+        counter += 1
 
     return operation_count
