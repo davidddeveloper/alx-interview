@@ -9,9 +9,9 @@
 
 
 def minOperations(n):
-    no_of_operation = 0
+    operation_count = 0
     if n == 1:
-        return 1
+        return operation_count
 
     # initially create the file
     # with open('xyz', 'w') as f:
@@ -19,9 +19,9 @@ def minOperations(n):
 
     counter = 2
     while (counter <= n):
-        if n % counter == 0:  # counter is a factor of n
+        while n % counter == 0:  # counter is a factor of n
             print(counter, n)
-            no_of_operation += counter
+            operation_count += counter
 
             # perform the read and write operation
             # copied = 'character'
@@ -39,5 +39,4 @@ def minOperations(n):
         else:
             counter += 1
 
-    return no_of_operation
-
+    return operation_count
