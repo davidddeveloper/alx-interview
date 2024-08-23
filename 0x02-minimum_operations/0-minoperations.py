@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
   0-minoperations.py: Minimum Operations
   read the readme for explanation here
