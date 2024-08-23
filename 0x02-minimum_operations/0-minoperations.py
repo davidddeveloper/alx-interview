@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-  0-minoperations.py: Minimum Operations
-  read the readme for explanation here
-  https://github.com/davidddeveloper/alx-interview/blob/main/0x02-minimum_operations/README.md
+    0-minoperations: iterative approach to find the minimum number operations
+    to result in nHs
+    read the readme for explanation at github:
+    davidddeveloper/alx-interview/blob/main/0x02-minimum_operations/README.md
 
 """
 
@@ -10,21 +11,21 @@
 def minOperations(n):
     no_of_operation = 0
     if n == 1:
-        # initially create the file
-        # with open('xyz', 'w') as f:
-        #    f.write('H')  # paste
-        return no_of_operation
+        return 1
 
-    # dynamic programming - tabulation
-    for i in range(2, n + 1):
-        if n % i == 0:
-            print('factor', i)
-            no_of_operation += minOperations(n // i)
-            no_of_operation += i
+    # initially create the file
+    # with open('xyz', 'w') as f:
+    #    f.write('H')  # paste
+
+    counter = 2
+    while (counter <= n):
+        if n % counter == 0:  # counter is a factor of n
+            print(counter, n)
+            no_of_operation += counter
 
             # perform the read and write operation
             # copied = 'character'
-            # for i in range(i):
+            # for i in range(counter):
             #    if i == 0:
             #        with open('xyz', 'r') as f:
             #            copied = f.read()
@@ -33,6 +34,10 @@ def minOperations(n):
             #        with open('xyz', 'a') as f:
             #            f.write(copied)
 
-            break
+            n = n // counter
+            counter = 2  # reset counter
+        else:
+            counter += 1
 
     return no_of_operation
+
