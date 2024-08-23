@@ -1,7 +1,7 @@
 # Minimum Operations
 > `question` In a text file, there is a single character H. Your text editor can execute only two operations in this file: Copy All and Paste. Given a number n, write a method that calculates the fewest number of operations needed to result in exactly n H characters in the file.
 >
-> `my understand` - you are only allowed to perform read/write operation on the file, the file will contain a single character H, the end goal is to end up with n Hs (n number of Hs). Eventhough this is what the question means, it is not necessary to perform read/write operation or even work with fille(s) in your solution. It is just an assumption to say `In a text file, there is a single character H.` However, in the psuedocode below, I have include the read/write operation so you can really understand what's going on in the solution. But note also that including the read/write operation in the solution can be ineffective especially with larger values of n - `your cpu will get fried`. Regardless I have included it in the pseudocode - so it is your choice to make, wheather to include in your final solution or not.
+> `my understand` - you are only allowed to perform read/write operation on the file, the file will contain a single character H, the end goal is to end up with n Hs (n number of Hs). Eventhough this is what the question means, it is not necessary to perform read/write operation or even work with fille(s) in your solution. It is just an assumption to say `In a text file, there is a single character H.` However, in the psuedocode below, I have include the read/write operation so you can really understand what's going on in the solution. But note also that including the read/write operation in the solution can be ineffective especially with larger values of n - `your cpu will get fried`. Regardless I have included it in the pseudocode - so it is your choice to make wheather to include in it your final solution or not.
 >
 
 ## concepts that helped me to solve the question
@@ -20,7 +20,7 @@ is a method in math and computer science to solve complex problems by breaking i
 > imagine a function that takes a positive integer argument n and calls itself, each times it decrement n and print it out until n is zero (`break point`)
 > 
 > now imagine calling that function and passing 4 as the argument for n. What do you think will happen?
-> This is what the stacking would look like and I thing the image is self explanatory - the function that call itself will have to wait for itself `the clone` to finish before continuing itself. - `synchronous` So it keeps stacking until the break point is reached. When the break point is reached the function rolls back to execute other part of the code after the call to itself.
+> This is what the stacking would look like and I think the image is self explanatory - the function that call itself will have to wait for itself `the clone` to finish before continuing itself. - `synchronous` So it keeps stacking until the break point is reached. When the break point is reached the function rolls back to execute other part of the code after the call to itself.
 > 
 > ![code_stacking](https://github.com/user-attachments/assets/d7df4850-82dd-43c5-b355-10760b9cb29e)
 
