@@ -35,8 +35,6 @@ def minOperations(n):
             #            f.write(copied)
 
             n = n // counter
-            counter = 2  # reset counter
-        else:
-            counter += 1
+        counter += 1  # reset counter
 
     return operation_count
