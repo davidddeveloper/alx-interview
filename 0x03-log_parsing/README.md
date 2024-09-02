@@ -18,3 +18,9 @@
 >  >   > format: <status code>: <number>
 >  >   >
 >  >   > status codes should be printed in ascending order
+
+## pseudocode
+![stats_pseudocode](https://github.com/user-attachments/assets/04a9a344-b05f-47c7-b4e2-e6ad257e4dfe)
+
+## solution
+> [python solution](0-stats.py)
