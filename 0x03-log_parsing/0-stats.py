@@ -40,6 +40,8 @@ class Log:
 
             # log stats when ctrl+c signal receive and exit
             signal.signal(signal.SIGINT, self.sigint_handler)
+        else:
+            self.log()
 
     def extract(self, search):
         if search:
