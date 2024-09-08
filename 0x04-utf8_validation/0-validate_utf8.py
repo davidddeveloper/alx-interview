@@ -5,6 +5,9 @@
 
 
 def validUTF8(data):
+    if data == []:
+        return False
+
     for number in data:
         if number > 255:
             return False
