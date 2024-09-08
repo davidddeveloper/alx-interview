@@ -9,6 +9,6 @@ def validUTF8(data):
         return False
 
     for number in data:
-        if number > 255:
+        if number > 127:
             return False
     return True
