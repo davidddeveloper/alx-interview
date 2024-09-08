@@ -9,6 +9,6 @@ def validUTF8(data):
         return False
 
     for number in data:
-        if number < 32 or number > 128:
+        if len(bin(number).split('0b')[1]) > 7:
             return False
     return True
