@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const argv = process.argv.slice(2)
+const argv = process.argv.slice(2);
 const filmId = argv[0];
 const endpoint = `https://swapi-api.alx-tools.com/api/films/${filmId}`;
 
