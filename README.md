@@ -7,6 +7,7 @@
 ### [Log Parsing](/0x03-log_parsing)
 ### [UTF-8 validation ](/0x04-utf8_validation)
 ### [StarWars API](/0x06-starwars_api)
+### [Rotate 2D Matrix](0x07-rotate_2d_matrix)
 
 ## Resources
 [freecodeCamp SE Interview questions](https://www.youtube.com/watch?feature=shared&v=1qw5ITr3k9E)
@@ -20,3 +21,9 @@
 [AWS Software Engineer vs String Manipulation! | Software Engineering Mock Interviews](https://www.youtube.com/watch?feature=shared&v=GneS80iYa7I)
 
 [Amazon Software Engineer vs. Binary Search! | Software Engineering Mock Interviews](https://www.youtube.com/watch?feature=shared&v=QvqvMxg24gY)
+
+[AWS Engineer vs. Greedy Algorithm! | Software Engineering Mock Interviews](https://www.youtube.com/watch?feature=shared&v=yM9Xbi-MigE)
+
+[Inplace rotate square matrix by 90 degrees](https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/)
+
+[Transpose a matrix in Single line in Python](https://www.geeksforgeeks.org/transpose-matrix-single-line-python/)
