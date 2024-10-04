@@ -28,9 +28,6 @@ def makeChange(coins, total):
 
     # meaning: i can't change total with the coins have
     if total != 0:
-        return 0
+        return -1
 
     return count
-
-
-print(makeChange([1, 2, 25], 37))
