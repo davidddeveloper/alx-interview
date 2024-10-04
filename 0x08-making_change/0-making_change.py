@@ -9,6 +9,9 @@ def makeChange(coins, total):
         return the minimum set of coins needed
         to make a change to a total
     """
+    if total <= 0:
+        return 0
+
     dp = coins
     dp.sort()
     count = 0
@@ -22,6 +25,10 @@ def makeChange(coins, total):
             break
         else:
             i = i - 1
+
+    # meaning: i can't change total with the coins have
+    if total != 0:
+        return 0
 
     return count
 
