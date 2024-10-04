@@ -11,6 +11,8 @@ def makeChange(coins, total):
     """
     if total <= 0:
         return 0
+    if coins == []:
+        return 0
 
     dp = coins
     dp.sort()
