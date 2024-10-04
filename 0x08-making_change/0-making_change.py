@@ -3,6 +3,7 @@
     0-making_change.py: minimum set of coins needed to make a change
 """
 
+
 def makeChange(coins, total):
     """
         return the minimum set of coins needed
@@ -23,5 +24,6 @@ def makeChange(coins, total):
             i = i - 1
 
     return count
+
 
 print(makeChange([1, 2, 25], 37))
