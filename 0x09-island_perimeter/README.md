@@ -16,7 +16,7 @@
 
 >`idea`: the simplest way to solve this problem is to find the start and end of the island and multiple it by 4.
 >
->`how to do this`: since 1 represent water, loop through the array and save the row index and column index when you first find 1. Do this when you find last find 1, subtract and multiple by 4 to find perimeter. Look at the pseudocode below to further undestand this concept.
+>`how to do this`: since 1 represent land, loop through the array and save the row index and column index when you first find 1. Do this when you find last find 1, subtract and multiple by 4 to find perimeter. Look at the pseudocode below to further undestand this concept.
 >
 
 >`goal`: find the perimeter in a 2d list
