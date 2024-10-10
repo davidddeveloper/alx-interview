@@ -31,17 +31,20 @@ def island_perimeter(grid):
                 vertical_end = (index, idx)
                 horizontal_end = (index, idx)
 
-    if vertical_length == 1 and horizontal_length == 1:
-        return 0 # no island
-
     if vertical_start == (0, 0) and horizontal_start == (0, 0) \
             and vertical_end == (0, 0) and horizontal_end == (0, 0):
         return 0  # no island
 
-    # since each cell is a square we multiply by 2
     # we are adding 1 for inclusivity
     vertical_length = ((vertical_end[0] - vertical_start[0]) * 2) + 1
     horizontal_length = ((horizontal_end[1] - horizontal_start[0]) * 2) + 1
+
+    if vertical_length == 1 and horizontal_length == 1:
+        return 0  # no island
+
+    # since each cell is a square we multiply by 2
+    vertical_length = vertical_length * 2
+    horizontal_length = horizontal_length * 2
 
     perimeter = (vertical_length + horizontal_length)
 
