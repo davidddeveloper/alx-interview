@@ -33,7 +33,7 @@ def island_perimeter(grid):
 
     if vertical_start == (0, 0) and horizontal_start == (0, 0) \
             and vertical_end == (0, 0) and horizontal_end == (0, 0):
-        return 0
+        return 0  # no island
 
     # we are adding 1 for inclusivity
     vertical_length = ((vertical_end[0] - vertical_start[0]) + 1)
