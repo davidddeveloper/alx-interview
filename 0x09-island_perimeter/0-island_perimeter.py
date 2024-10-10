@@ -32,7 +32,7 @@ def island_perimeter(grid):
                 horizontal_end = (index, idx)
 
     if vertical_start == (0, 0) and horizontal_start == (0, 0) \
-    and vertical_end == (0, 0) and horizontal_end == (0, 0):
+            and vertical_end == (0, 0) and horizontal_end == (0, 0):
         return 0  # no island
 
     # since each cell is a square we multiply by 2
