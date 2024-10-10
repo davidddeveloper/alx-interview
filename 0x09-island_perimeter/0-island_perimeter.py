@@ -39,6 +39,9 @@ def island_perimeter(grid):
     vertical_length = ((vertical_end[0] - vertical_start[0]) + 1)
     horizontal_length = ((horizontal_end[1] - horizontal_start[0]) + 1)
 
+    if vertical_length == 1 and horizontal_length == 1
+        return 0
+
     # since each cell is a square we multiply by 2
     vertical_length = vertical_length * 2
     horizontal_length = horizontal_length * 2
