@@ -37,8 +37,8 @@ def island_perimeter(grid):
 
     # since each cell is a square we multiply by 2
     # we are adding 1 for inclusivity
-    vertical_length = ((vertical_end[0] - vertical_start[0]) + 1) * 2
-    horizontal_length = ((horizontal_end[1] - horizontal_start[0]) + 1) * 2
+    vertical_length = ((vertical_end[0] - vertical_start[0]) * 2) + 1
+    horizontal_length = ((horizontal_end[1] - horizontal_start[0]) * 2) + 1
 
     perimeter = (vertical_length + horizontal_length)
 
