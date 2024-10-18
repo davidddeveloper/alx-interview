@@ -37,10 +37,7 @@ def isWinner(x, nums):
     player_two_turns = False
     for n in nums:
         prime_nums = prime_numbers(n)
-
-        print(prime_nums)
         for index, prime in enumerate(prime_nums):
-
             if player_one_turns:
                 player_one_point += 1
                 player_one_turns = False
@@ -52,7 +49,6 @@ def isWinner(x, nums):
 
             # prime_nums = remove_multiple(prime, prime_nums)
 
-    print(player_one_point, player_two_point)
     if player_one_point > player_two_point:
         return 'Maria'
     elif player_two_point > player_one_point:
@@ -64,4 +60,4 @@ def isWinner(x, nums):
             return 'Maria'
 
 
-print(isWinner(3, [4, 5, 1]))
+isWinner(3, [4, 5, 1])
