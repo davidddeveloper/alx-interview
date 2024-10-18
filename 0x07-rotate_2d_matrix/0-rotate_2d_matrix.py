@@ -1,4 +1,16 @@
+#!/usr/bin/python3
+"""
+    rotate_2d_matrix.py: Rotate a 2D matrix
+"""
+
+
 def rotate_2d_matrix(matrix):
+    """
+    Rotate a 2D matrix 90 degrees clockwise.
+
+    :param matrix: 2D matrix to rotate
+    :return: rotated matrix
+    """
     n = len(matrix)
 
     # Loop through each layer (starting from outer to inner)
