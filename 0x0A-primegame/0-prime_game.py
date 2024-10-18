@@ -37,6 +37,8 @@ def isWinner(x, nums):
     player_two_turns = False
     for n in nums:
         prime_nums = prime_numbers(n)
+        if n == 1:
+            prime_nums = [1]
         for index, prime in enumerate(prime_nums):
             if player_one_turns:
                 player_one_point += 1
