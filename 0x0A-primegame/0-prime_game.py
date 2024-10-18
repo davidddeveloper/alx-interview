@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+    0-prime_game: find the winner in a game of two players
+    given a set of numbers, players take turn
+    choosing a prime number removing it and it multiples
+"""
+
 
 def prime_numbers(n):
     """
