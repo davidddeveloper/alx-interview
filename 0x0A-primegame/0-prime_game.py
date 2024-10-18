@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 
 def prime_numbers(n):
     prime = [True for i in range(n+1)]
@@ -7,7 +7,7 @@ def prime_numbers(n):
 
         # If prime[p] is not
         # changed, then it is a prime
-        if (prime[p] == True):
+        if prime[p] is True:
 
             # Update all multiples of p
             for i in range(p * p, n+1, p):
@@ -21,12 +21,14 @@ def prime_numbers(n):
             prime_nums.append(p)
     return prime_nums
 
+
 def remove_multiple(prime, prime_numbers):
     for idx, val in enumerate(prime_numbers):
         if val % prime == 0:
             print('yay!')
             del prime_numbers[idx]
     return prime_numbers
+
 
 def isWinner(x, nums):
     player_one_point = 0
@@ -35,7 +37,7 @@ def isWinner(x, nums):
     player_two_turns = False
     for n in nums:
         prime_nums = prime_numbers(n)
-        
+
         print(prime_nums)
         for index, prime in enumerate(prime_nums):
 
@@ -48,8 +50,8 @@ def isWinner(x, nums):
                 player_two_turns = False
                 player_one_turns = True
 
-            #prime_nums = remove_multiple(prime, prime_nums)
-    
+            # prime_nums = remove_multiple(prime, prime_nums)
+
     print(player_one_point, player_two_point)
     if player_one_point > player_two_point:
         return 'Maria'
@@ -60,5 +62,6 @@ def isWinner(x, nums):
             return 'Ben'
         elif player_two_turns:
             return 'Maria'
+
 
 print(isWinner(3, [4, 5, 1]))
