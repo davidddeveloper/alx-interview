@@ -42,8 +42,6 @@ def isWinner(x, nums):
 
     for n in nums:
         prime_nums = prime_numbers(n)
-        if n == 1:
-            prime_nums = [1]
         player_one_turns = True
 
         # Alternate between players
