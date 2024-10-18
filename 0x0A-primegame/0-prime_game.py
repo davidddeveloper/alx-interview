@@ -15,20 +15,10 @@ def prime_numbers(n):
         p += 1
 
     prime_nums = []
-    # Print all prime numbers
     for p in range(2, n+1):
         if prime[p]:
             prime_nums.append(p)
     return prime_nums
-
-
-def remove_multiple(prime, prime_numbers):
-    for idx, val in enumerate(prime_numbers):
-        if val % prime == 0:
-            print('yay!')
-            del prime_numbers[idx]
-    return prime_numbers
-
 
 def isWinner(x, nums):
     player_one_point = 0
@@ -49,8 +39,6 @@ def isWinner(x, nums):
                 player_two_turns = False
                 player_one_turns = True
 
-            # prime_nums = remove_multiple(prime, prime_nums)
-
     if player_one_point > player_two_point:
         return 'Maria'
     elif player_two_point > player_one_point:
@@ -61,3 +49,4 @@ def isWinner(x, nums):
         elif player_two_turns:
             return 'Maria'
 
+print((isWinner(3, [4, 5, 1])))
