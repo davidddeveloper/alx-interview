@@ -40,17 +40,17 @@ def isWinner(x, nums):
     player_two_point = 0
     last_player = None
 
-    # Loop over each number in nums
     for n in nums:
         prime_nums = prime_numbers(n)
+        if n == 1:
+            prime_nums = [1]
         player_one_turns = True
 
-        # Alternate between players, each taking a prime number
+        # Alternate between players
         while prime_nums:
             current_prime = prime_nums[0]
             prime_nums = remove_multiples(current_prime, prime_nums)
 
-            # Assign points based on whose turn it is
             if player_one_turns:
                 player_one_point += 1
                 player_one_turns = False
@@ -66,4 +66,4 @@ def isWinner(x, nums):
     elif player_two_point > player_one_point:
         return 'Ben'
     else:
-        return last_player  # Tie if both players have the same points
+        return last_player
