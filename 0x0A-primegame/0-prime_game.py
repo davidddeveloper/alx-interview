@@ -32,7 +32,7 @@ def remove_multiples(prime, prime_numbers):
     return [num for num in prime_numbers if num % prime != 0]
 
 
-def is_winner(x, nums):
+def isWinner(x, nums):
     """
     Determines the winner of the game.
     """
