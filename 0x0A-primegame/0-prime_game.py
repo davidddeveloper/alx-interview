@@ -38,6 +38,7 @@ def isWinner(x, nums):
     """
     player_one_point = 0
     player_two_point = 0
+    last_player = None
 
     # Loop over each number in nums
     for n in nums:
@@ -53,9 +54,11 @@ def isWinner(x, nums):
             if player_one_turns:
                 player_one_point += 1
                 player_one_turns = False
+                last_player = 'Maria'
             else:
                 player_two_point += 1
                 player_one_turns = True
+                last_player = 'Ben'
 
     # Determine the winner
     if player_one_point > player_two_point:
@@ -63,4 +66,4 @@ def isWinner(x, nums):
     elif player_two_point > player_one_point:
         return 'Ben'
     else:
-        return None  # Tie if both players have the same points
+        return last_player  # Tie if both players have the same points
