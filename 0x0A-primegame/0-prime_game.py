@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 def prime_numbers(n):
+    """
+        find the prime numbers from 2 to n (inclusive)
+    """
     prime = [True for i in range(n+1)]
     p = 2
     while (p * p <= n):
@@ -21,7 +24,10 @@ def prime_numbers(n):
     return prime_nums
 
 
-def remove_multiple(prime, prime_numbers):
+def remove_multiples(prime, prime_numbers):
+    """
+        remove multiples of prime
+    """
     for idx, val in enumerate(prime_numbers):
         if val % prime == 0:
             del prime_numbers[idx]
@@ -29,6 +35,9 @@ def remove_multiple(prime, prime_numbers):
 
 
 def isWinner(x, nums):
+    """
+        checks for the winner of the game
+    """
     player_one_point = 0
     player_two_point = 0
     player_one_turns = True
