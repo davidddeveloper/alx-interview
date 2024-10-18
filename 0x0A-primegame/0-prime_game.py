@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def prime_numbers(n):
+def isWinner(x, nums):
     prime = [True for i in range(n+1)]
     p = 2
     while (p * p <= n):
@@ -18,9 +18,7 @@ def prime_numbers(n):
     for p in range(2, n+1):
         if prime[p]:
             prime_nums.append(p)
-    return prime_nums
 
-def isWinner(x, nums):
     player_one_point = 0
     player_two_point = 0
     player_one_turns = True
@@ -48,5 +46,6 @@ def isWinner(x, nums):
             return 'Ben'
         elif player_two_turns:
             return 'Maria'
+
 
 print((isWinner(3, [4, 5, 1])))
