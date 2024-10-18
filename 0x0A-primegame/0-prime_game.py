@@ -61,5 +61,3 @@ def isWinner(x, nums):
         elif player_two_turns:
             return 'Maria'
 
-
-isWinner(3, [4, 5, 1])
