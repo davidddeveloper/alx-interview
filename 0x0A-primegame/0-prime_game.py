@@ -56,7 +56,7 @@ def isWinner(x, nums):
                 player_two_turns = False
                 player_one_turns = True
 
-            # prime_nums = remove_multiple(prime, prime_nums)
+            prime_nums = remove_multiples(prime, prime_nums)
 
     if player_one_point > player_two_point:
         return 'Maria'
