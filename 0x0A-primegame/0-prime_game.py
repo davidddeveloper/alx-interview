@@ -8,23 +8,18 @@
 
 def prime_numbers(n):
     """
-    find the prime numbers from 2 to n (inclusive)
+    Find the prime numbers from 2 to n (inclusive).
     """
-    prime = [True for i in range(n+1)]
+    prime = [True for i in range(n + 1)]
     p = 2
     while p * p <= n:
-
-        # If prime[p] is not
-        # changed, then it is a prime
-        if prime[p] is True:
-
-            # Update all multiples of p
-            for i in range(p * p, n+1, p):
+        if prime[p]:
+            for i in range(p * p, n + 1, p):
                 prime[i] = False
         p += 1
 
     prime_nums = []
-    for p in range(2, n+1):
+    for p in range(2, n + 1):
         if prime[p]:
             prime_nums.append(p)
     return prime_nums
@@ -32,44 +27,40 @@ def prime_numbers(n):
 
 def remove_multiples(prime, prime_numbers):
     """
-    remove multiples of prime
+    Remove multiples of the prime number from the list of prime numbers.
     """
-    for idx, val in enumerate(prime_numbers):
-        if val % prime == 0:
-            del prime_numbers[idx]
-    return prime_numbers
+    return [num for num in prime_numbers if num % prime != 0]
 
 
-def isWinner(x, nums):
+def is_winner(x, nums):
     """
-    checks for the winner of the game
+    Determines the winner of the game.
     """
     player_one_point = 0
     player_two_point = 0
-    player_one_turns = True
-    player_two_turns = False
+
+    # Loop over each number in nums
     for n in nums:
         prime_nums = prime_numbers(n)
-        if n == 1:
-            prime_nums = [1]
-        for index, prime in enumerate(prime_nums):
+        player_one_turns = True
+
+        # Alternate between players, each taking a prime number
+        while prime_nums:
+            current_prime = prime_nums[0]
+            prime_nums = remove_multiples(current_prime, prime_nums)
+
+            # Assign points based on whose turn it is
             if player_one_turns:
                 player_one_point += 1
                 player_one_turns = False
-                player_two_turns = True
-            elif player_two_turns:
+            else:
                 player_two_point += 1
-                player_two_turns = False
                 player_one_turns = True
 
-            # prime_nums = remove_multiples(prime, prime_nums)
-
+    # Determine the winner
     if player_one_point > player_two_point:
         return 'Maria'
     elif player_two_point > player_one_point:
         return 'Ben'
     else:
-        if player_one_turns:
-            return 'Ben'
-        elif player_two_turns:
-            return 'Maria'
+        return None  # Tie if both players have the same points
